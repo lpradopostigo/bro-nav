@@ -1,2 +1,1 @@
-// import '../src/bro-nav'
-import '../src/test'
+import '../src/bro-nav'
