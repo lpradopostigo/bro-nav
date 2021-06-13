@@ -1,8 +1,8 @@
 {
-  "name": "bro-nav",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@brocolio/bro-nav",
+  "version": "0.1.0",
+  "description": "Custom navigation bar",
+  "main": "dist/index.js",
   "directories": {
     "test": "test"
   },
@@ -10,9 +10,11 @@
     "start": "npx snowpack dev --open firefox",
     "build": "npx snowpack build"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": [
+    "web component"
+  ],
+  "author": "lpradopostigo@gmail.com",
+  "license": "MIT",
   "dependencies": {
     "lit": "^2.0.0-rc.2"
   },
