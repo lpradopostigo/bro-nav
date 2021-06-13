@@ -1,0 +1,16 @@
+
+{
+  "compilerOptions": {
+    "target": "ES6",
+    /* Visit https://aka.ms/tsconfig.json to read more about this file */
+    "declaration": true                       /* Generates corresponding '.d.ts' file. */,
+    "strict": true,                        /* Enable all strict type-checking options. */
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    /* Module Resolution Options */
+    "experimentalDecorators": true,           /* Enables experimental support for ES7 decorators. */
+    // "emitDecoratorMetadata": true,         /* Enables experimental support for emitting type metadata for decorators. */
+
+    "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
+  },
+}
