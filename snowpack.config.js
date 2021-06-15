@@ -11,7 +11,11 @@ if (envMode === 'development') {
 } else if (envMode === 'production') {
   module.exports = {
     mount: {
-      src: '/dist'
+      src: '/'
+    },
+    buildOptions: {
+      out: 'dist',
+      clean: false
     }
   }
 }

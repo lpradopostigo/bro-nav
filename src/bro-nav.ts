@@ -110,3 +110,5 @@ export default class BroNav extends LitElement {
     }
   }
 }
+
+export { BroNav }
