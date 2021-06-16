@@ -81,7 +81,7 @@ export default class BroNav extends LitElement {
       <ul part="links">
         <slot name="link"></slot>
       </ul>
-      <slot @click=${this.toggleLinksDrawer} name="links-drawer"></slot>
+      <slot @click=${this.toggleLinksContainer} name="links-drawer"></slot>
     `
   }
 
@@ -97,16 +97,23 @@ export default class BroNav extends LitElement {
     })
   }
 
-  private toggleLinksDrawer () {
+  private toggleLinksContainer () {
+    this.linksContainerVisible ? this.hideLinksContainer() : this.showLinksContainer()
+  }
+
+  hideLinksContainer () {
     if (this.linksContainer) {
-      if (this.linksContainerVisible) {
-        this.linksContainer.style.transform = 'translateY(-100%)'
-        this.linksContainer.style.opacity = '0'
-      } else {
-        this.linksContainer.style.transform = 'translateY(0)'
-        this.linksContainer.style.opacity = '1'
-      }
-      this.linksContainerVisible = !this.linksContainerVisible
+      this.linksContainer.style.transform = 'translateY(-100%)'
+      this.linksContainer.style.opacity = '0'
+      this.linksContainerVisible = false
+    }
+  }
+
+  showLinksContainer () {
+    if (this.linksContainer) {
+      this.linksContainer.style.transform = 'translateY(0)'
+      this.linksContainer.style.opacity = '1'
+      this.linksContainerVisible = true
     }
   }
 }
